@@ -1,7 +1,7 @@
 import pytest
 from pytest import approx
 import math
-from my_source import add_func, euclid
+from my_source import add_func
 
 
 def test_add_one():
@@ -11,10 +11,3 @@ def test_add_one():
 @pytest.mark.xfail
 def test_add_fail():
     assert add_func(5, 5) == 9
-
-
-def test_euclid():
-    a = [0, 0, 0]
-    b = [4, 4, 4]
-    dist = euclid(a, b)
-    assert(math.sqrt(48.) == approx(dist))
