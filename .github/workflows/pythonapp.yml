@@ -25,7 +25,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Lint with pylint
       run: |
-        pylint my_source.py
+        pylint --exit-zero my_source.py
     - name: Test with pytest
       run: |
         pytest
