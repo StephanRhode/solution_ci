@@ -1,7 +1,7 @@
 import pytest
 from pytest import approx
 import math
-from my_source import add_func, euclid
+from src.my_source import add_func, euclid
 
 
 def test_add_one():
